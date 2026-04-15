@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Caveat:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-handwriting: "Caveat", cursive;
+  --color-pastel-pink: #FF8DA1;
+  --color-pastel-blue: #AECBEB;
+  --color-pastel-green: #A7D7C5;
+  --color-pastel-yellow: #FDE68A;
+  --color-bg-cream: #FFFDF9;
+  --color-text-main: #5A5A5A;
+  --color-text-dark: #2D3748;
+}
+
+@layer utilities {
+  .soft-shadow {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.05);
+  }
+  
+  .soft-shadow-hover:hover {
+    box-shadow: 0 20px 40px -10px rgba(255, 141, 161, 0.2);
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  background-color: #FFFDF9;
+  color: #5A5A5A;
+  overflow-x: hidden;
+}
+
+/* Decorative background blobs */
+.bg-shape {
+  position: absolute;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
