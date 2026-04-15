@@ -378,6 +378,8 @@ const JourneyTimeline = () => {
                 alt={current.title}
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -583,6 +585,8 @@ const PhotoGallery = () => {
                           alt={photo.caption || "Gallery"}
                           className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                           referrerPolicy="no-referrer"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                       {photo.caption && (
