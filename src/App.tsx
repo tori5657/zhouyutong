@@ -234,7 +234,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="w-32 h-32 md:w-48 md:h-48 mb-6 rounded-full overflow-hidden border-4 border-white shadow-xl z-20 relative bg-white"
         >
-          <img src="/我本人.JPG" alt="周昱彤" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}我本人.JPG`} alt="周昱彤" className="w-full h-full object-cover" />
         </motion.div>
         
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pastel-yellow/30 text-yellow-700 font-bold text-sm mb-8">
@@ -303,7 +303,7 @@ const JourneyTimeline = () => {
       desc: "故事的起点。不仅在这里打下了扎实的管理与数据基础，更重要的是，学会了如何用好奇心去解构这个复杂的世界。",
       color: "bg-pastel-yellow",
       textColor: "text-yellow-700",
-      img: "/山东大学.jpg"
+      img: `${import.meta.env.BASE_URL}山东大学.jpg`
     },
     {
       period: "2019.07 - 2020.01",
@@ -312,7 +312,7 @@ const JourneyTimeline = () => {
       desc: "第一次勇敢地跨出舒适圈。在维港的海风中，体验了多元文化的激烈碰撞，也让我在不同的学术氛围里找到了新的自我坐标。",
       color: "bg-purple-200",
       textColor: "text-purple-700",
-      img: "/cityu.jpg"
+      img: `${import.meta.env.BASE_URL}cityu.jpg`
     },
     {
       period: "2022.08 - 2024.01",
@@ -321,7 +321,7 @@ const JourneyTimeline = () => {
       desc: "跨越赤道来到热烈的狮城。在数据的海洋里深潜，在全球化的视野中重塑认知，更加坚定了我要走向更广阔世界的决心。",
       color: "bg-pastel-green",
       textColor: "text-green-700",
-      img: "/nus.jpg"
+      img: `${import.meta.env.BASE_URL}nus.jpg`
     },
     {
       period: "2024.04 - 2025.05",
@@ -330,7 +330,7 @@ const JourneyTimeline = () => {
       desc: "一头扎进新能源巨头的快车道。在这里，我把严谨的数据分析当成武器，在错综复杂的跨部门协作中，硬核地推动了一个个数字化产品的落地。",
       color: "bg-pastel-blue",
       textColor: "text-blue-700",
-      img: "/catl.jpg"
+      img: `${import.meta.env.BASE_URL}catl.jpg`
     },
     {
       period: "2025.05 - 至今",
@@ -339,7 +339,7 @@ const JourneyTimeline = () => {
       desc: "带着过往的所有沉淀，开启出海新篇章。现在，我正致力于将天马行空的想法转化为连接全球用户的产品力，用技术让信任跨越国界。",
       color: "bg-pastel-pink",
       textColor: "text-pink-700",
-      img: "/e签宝.png"
+      img: `${import.meta.env.BASE_URL}e签宝.png`
     }
   ];
 
@@ -458,11 +458,11 @@ const PhotoGallery = () => {
       descLeft: "来自东北的凛冽与温柔。",
       descRight: "吉林，是我出发的地方，也是永远的底色。",
       photos: [
-        { url: "/家乡1.jpg", caption: "银装素裹的童话世界" },
-        { url: "/家乡2.JPG", caption: "属于东北的限定浪漫" },
-        { url: "/家乡.jpg", caption: "静谧的故乡" },
-        { url: "/家乡-早市.jpg", caption: "满是烟火气的早市" },
-        { url: "/家乡-更多的天空.jpg", caption: "抬头就是治愈系的蓝天" }
+        { url: `${import.meta.env.BASE_URL}家乡1.jpg`, caption: "银装素裹的童话世界" },
+        { url: `${import.meta.env.BASE_URL}家乡2.JPG`, caption: "属于东北的限定浪漫" },
+        { url: `${import.meta.env.BASE_URL}家乡.jpg`, caption: "静谧的故乡" },
+        { url: `${import.meta.env.BASE_URL}家乡-早市.jpg`, caption: "满是烟火气的早市" },
+        { url: `${import.meta.env.BASE_URL}家乡-更多的天空.jpg`, caption: "抬头就是治愈系的蓝天" }
       ]
     },
     {
@@ -472,13 +472,13 @@ const PhotoGallery = () => {
       descLeft: "感受不同城市的呼吸。",
       descRight: "在多元文化中收获感动，用脚步丈量世界。",
       photos: [
-        { url: "/泰国.JPG", caption: "泰国的热烈海风" },
-        { url: "/韩国.jpg", caption: "韩国街角的午后咖啡" },
-        { url: "/香港.jpg", caption: "维港摇曳的夜风" },
-        { url: "/上海迪士尼.JPG", caption: "逃避现实的童话世界" },
-        { url: "/厦门.jpg", caption: "厦门的晚风很温柔" },
-        { url: "/福州.JPG", caption: "福州街头的慢时光" },
-        { url: "/长沙.jpg", caption: "长沙的夜，热烈而喧嚣" }
+        { url: `${import.meta.env.BASE_URL}泰国.JPG`, caption: "泰国的热烈海风" },
+        { url: `${import.meta.env.BASE_URL}韩国.jpg`, caption: "韩国街角的午后咖啡" },
+        { url: `${import.meta.env.BASE_URL}香港.jpg`, caption: "维港摇曳的夜风" },
+        { url: `${import.meta.env.BASE_URL}上海迪士尼.JPG`, caption: "逃避现实的童话世界" },
+        { url: `${import.meta.env.BASE_URL}厦门.jpg`, caption: "厦门的晚风很温柔" },
+        { url: `${import.meta.env.BASE_URL}福州.JPG`, caption: "福州街头的慢时光" },
+        { url: `${import.meta.env.BASE_URL}长沙.jpg`, caption: "长沙的夜，热烈而喧嚣" }
       ]
     },
     {
@@ -488,11 +488,11 @@ const PhotoGallery = () => {
       descLeft: "享受纯粹的独处时光。",
       descRight: "在智力博弈与挥洒汗水中，找到生活的平衡点。",
       photos: [
-        { url: "/生活-每周一束花.jpg", caption: "每周一束花的小确幸" },
-        { url: "/生活-喜欢天空.jpg", caption: "永远看不腻的治愈天空" },
-        { url: "/音乐爱好.jpg", caption: "沉浸在我的专属频段" },
-        { url: "/兴趣爱好-德州.jpg", caption: "德扑桌上的心理博弈" },
-        { url: "/爱好-乒乓比赛.jpg", caption: "乒乓赛场上的专注瞬间" }
+        { url: `${import.meta.env.BASE_URL}生活-每周一束花.jpg`, caption: "每周一束花的小确幸" },
+        { url: `${import.meta.env.BASE_URL}生活-喜欢天空.jpg`, caption: "永远看不腻的治愈天空" },
+        { url: `${import.meta.env.BASE_URL}音乐爱好.jpg`, caption: "沉浸在我的专属频段" },
+        { url: `${import.meta.env.BASE_URL}兴趣爱好-德州.jpg`, caption: "德扑桌上的心理博弈" },
+        { url: `${import.meta.env.BASE_URL}爱好-乒乓比赛.jpg`, caption: "乒乓赛场上的专注瞬间" }
       ]
     },
     {
@@ -502,13 +502,13 @@ const PhotoGallery = () => {
       descLeft: "在音乐里尽情释放。",
       descRight: "那些跟着节奏跳跃的夜晚，是平淡生活里的高光。",
       photos: [
-        { url: "/演唱会-许嵩.jpg", caption: "许嵩带来的青春回忆" },
-        { url: "/演唱会-billie eillish.jpg", caption: "Billie Eilish 的独特魅力" },
-        { url: "/音乐节1.jpg", caption: "音乐节的夏日狂欢" },
-        { url: "/音乐节2.jpg", caption: "跟着音浪一起跳跃" },
-        { url: "/演唱会-邓紫棋.jpg", caption: "G.E.M. 的高音震撼全场" },
-        { url: "/演唱会-aurora.JPG", caption: "Aurora 的空灵之音" },
-        { url: "/演唱会-sam smith.JPG", caption: "Sam Smith 的深情演绎" }
+        { url: `${import.meta.env.BASE_URL}演唱会-许嵩.jpg`, caption: "许嵩带来的青春回忆" },
+        { url: `${import.meta.env.BASE_URL}演唱会-billie eillish.jpg`, caption: "Billie Eilish 的独特魅力" },
+        { url: `${import.meta.env.BASE_URL}音乐节1.jpg`, caption: "音乐节的夏日狂欢" },
+        { url: `${import.meta.env.BASE_URL}音乐节2.jpg`, caption: "跟着音浪一起跳跃" },
+        { url: `${import.meta.env.BASE_URL}演唱会-邓紫棋.jpg`, caption: "G.E.M. 的高音震撼全场" },
+        { url: `${import.meta.env.BASE_URL}演唱会-aurora.JPG`, caption: "Aurora 的空灵之音" },
+        { url: `${import.meta.env.BASE_URL}演唱会-sam smith.JPG`, caption: "Sam Smith 的深情演绎" }
       ]
     }
   ];
@@ -655,7 +655,7 @@ const FloatingAIAssistant = () => {
   };
 
   // TODO: 替换为你自己的卡通头像 URL
-  const avatarUrl = "/我本人_卡通.png";
+  const avatarUrl = `${import.meta.env.BASE_URL}我本人_卡通.png`;
 
   return (
     <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-50 flex flex-col items-end">
