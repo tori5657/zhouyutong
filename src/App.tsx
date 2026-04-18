@@ -20,10 +20,7 @@ import {
   Camera,
   ArrowUpRight
 } from 'lucide-react';
-import { GoogleGenAI } from "@google/genai";
 
-// Initialize Gemini API
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
 
 const RevealOnScroll = ({ children, className = "", delay = 0, key }: { children: React.ReactNode, className?: string, delay?: number, key?: React.Key }) => {
   return (
